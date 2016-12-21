@@ -4,4 +4,349 @@
 </body>
 </html>
 
-<iframe width="320" height="335" src="http://www.flowlab.io/game/embed/462693" frameborder="0" allowfullscreen></iframe>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+  <link rel="stylesheet" href="/stylesheets/general.css">
+  <link rel="stylesheet" href="/stylesheets/builder.css">
+  <meta charset="utf-8">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"eb70720532","applicationID":"3447627","transactionName":"ewkKQEddVVRVQU0FUlUDS0RZU0A=","queueTime":0,"applicationTime":12,"agentToken":null,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+  <title>Flowlab Game Creator - cattle</title>
+  <meta name="description" content="Flowlab is an online game creator.  Make your own games to share with friends.">
+  <meta name="author" content="Ken Railey">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="follow" />
+
+  <meta property="og:title" content="Flowlab.io - cattle"/> 
+  <meta property="og:type" content="game"/> 
+  <meta property="og:image" content="/assets/users/33/user_336407/game_462693/screenshot.png"/> 
+  <meta property="og:url" content="http://flowlab.io/game/play/462693"/> 
+  <meta property="og:site_name" content="Flowlab.io"/> 
+  <meta property="fb:app_id" content="269904359790196"/> 
+
+
+  <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+  <!--[if lt IE 9]>
+  <script src="/javascripts/html5.js"></script>
+  <![endif]-->
+
+  <!-- Le styles -->
+  <style type="text/css">
+    
+    .logo {
+      font-size: 22px;
+
+      font-family: 'Arvo', cursive;
+      color: #95c7e0;
+      text-shadow: #fff 0 1px 0;
+      /*
+      font-family: 'Julius Sans One', cursive;
+      font-family: 'Lobster Two', cursive;
+      font-family: 'Stint Ultra Expanded', cursive;
+      font-family: 'Sail', cursive;
+      font-family: 'Lobster', cursive;
+      font-size: 32px;
+      line-height: 10px;
+      margin-top:6px;
+      margin-bottom: -10px;
+      */
+    }
+  </style>
+
+  <!-- Le fav and touch icons -->
+  <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
+  
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300" rel="stylesheet" type="text/css">
+
+  <!--
+  <link href='http://fonts.googleapis.com/css?family=Squada+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Krona+One' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Sail' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Stint+Ultra+Expanded' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Arvo|Lobster+Two' rel='stylesheet' type='text/css'>
+  -->
+  <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+
+  <script src="/javascripts/jquery-1.8.3.min.js"></script>
+
+
+
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-34045214-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+
+    function trackEvent(category, action, label) {
+      _gaq.push(['_trackEvent', category, action, label]);
+    }
+
+   </script>
+    <script type="text/javascript" src="/javascripts/swfobject.js"></script>
+    
+    </head>
+<body>
+<!-- FACEBOOK SDK -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=269904359790196";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <div class="navbar navbar-static-top">
+      <div class="navbar-inner">
+        <div class="container">
+
+          <a class="brand" href="/"><span class="logo">flowlab</span><sub style="color:#999;font-size:9px;">beta</sub></a>
+          <ul class="nav">
+            <li class=""><a href="/">Home</a></li>
+            <li class=""><a href="/game/browse">Games</a></li>
+            <li class=""><a href="/resources">Help</a></li>
+            <li class=""><a href="http://forum.flowlab.io/">Forums</a></li>
+            <li class=""><a href="/pricing">Pricing</a></li>
+            <li><a href="http://blog.flowlab.io/">Blog</a></li>
+            <li class=""><a href="/education">Teachers & Parents</a></li>
+          </ul>
+
+          <div class="pull-right">
+        
+            <ul class="nav">
+              <li class=""><a href="/game/list">My Games</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle">ggman82</a>
+              <ul class="dropdown-menu">
+                <li><a href="/users/sign_out">Sign Out</a></li>
+                <li><a href="/users/profile">Profile</a></li>
+              </ul>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="/badge/swfobject.js"></script>
+<style type="text/css">
+   
+.full_frame {
+    position:absolute;
+    bottom:0;
+    top:0;
+    width:100%;
+    padding-bottom:0;
+    overflow:hidden;
+}
+.wrapper_frame {
+    margin-top: 40px;
+    background-color:white;
+    padding-left:4px;
+    padding-right:4px;
+    padding-top:10px;
+    padding-bottom: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 330px;
+    height: 400px;
+    box-shadow: 1px 1px 3px #222;
+}
+#main {
+    width:100%;
+}
+#builder{
+    width: 320px;
+    height: 320px;
+    outline:none;
+}
+#game_author {
+    margin-top:-12px;
+    margin-bottom:6px;
+}
+</style>
+<div id="game" class="center">
+  <div id="game_frame" class="full_frame">
+    <div id="builder"><h1 style="margin-left:200px;margin-top:80px;width:500px;">This game requires the <a href="https://get.adobe.com/flashplayer/" target="_blank">Flash</a> plugin.</h1></div>
+    <div id="game_info">
+      <h3 class="subheader" id="game_title">cattle</h3>
+      <div id="game_author" style="color:#aaa;">By: <a href="/users/profile/336407">ggman82</a></div>
+
+      <div style="color:#aaa;">
+        <img style="margin-top:-2px;" src="/images/plays_icon.png">
+        2 Plays
+        <a href="" class="needs_tips" id="likebtn" style="outline: 0;"><img id="likeicon" style="margin-top:-2px;padding-left:8px;" src="/images/heart_icon_pink.png"></a>
+        <span id="fav_count">0</span> Favorites
+
+        <!--
+        <img  style="margin-top:-2px;padding-left:8px;" src="/images/share_icon.png">
+        Share
+        -->
+      </div>
+
+      <!-- SHARING -->
+      <!-- 
+      <a href="" id="sharebtn" class="btn btn-small btn-newsletter" style="line-height:14px;vertical-align:top;">share</a>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-via="flowlabio">Tweet</a>
+      <div class="fb-like" data-layout="button_count" data-width="450" data-show-faces="true" data-font="arial" style="vertical-align:top;zoom:1;*display:inline"></div>
+      <div id="share-game" style="display:none; margin-top:12px;">
+        <div class="input-prepend">
+          <span class="add-on" style="width:44px;">URL</span><input type="text" id="url" value="http://www.flowlab.io/game/play/462693">
+        </div>
+        <div class="input-prepend">
+          <span class="add-on" style="width:44px;">Embed</span><input type="text" id="embed" value="<iframe width=&quot;320&quot; height=&quot;320&quot; src=&quot;http://www.flowlab.io/game/embed/462693&quot; frameborder=&quot;0&quot; allowfullscreen></iframe>">
+        </div>
+        or 
+        <a href="#" 
+          onclick="
+            window.open(
+              'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 
+              'facebook-share-dialog', 
+              'width=626,height=436'); 
+            return false;">
+          Share on Facebook
+        </a>
+      </div>
+    </div>
+    -->
+
+    <div style="padding-bottom:80px;" id="btns">
+    <p style="margin-top:24px;"/>
+    <div id="edit_btn" onClick="openEditor();" class="btn btn-playgame"><i class="icon-edit icon-white" style="margin-top:2px;"></i> Open Editor</div>
+      <div id="screenshot_btn" class="btn"><i class="icon-camera" style="margin-top:2px;"></i> Screenshot</div>
+    <h4 id="screenshot-confirm" class="hidden">screenshot has been uploaded</h4>
+    </div>
+</div>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script type="text/javascript">
+      $(document).ready(function(){
+        $("body").bind("click", function (e) {
+          $('.dropdown-toggle, .menu').parent("li").removeClass("open");
+        });
+        $(".dropdown-toggle, .menu").click(function (e) {
+          var $li = $(this).parent("li").toggleClass('open');
+          return false;
+        });
+      });
+  var flashvars = { 
+    auth_token: "WgbrrsEd5aH3YUZbpsfr",
+    game: "462693",
+    splash: "",
+    uid: "336407",
+    mode: "play",
+    membership: "",
+    viewW: "320",
+    viewH: "320"
+  };
+  var params = {
+    allowFullScreen: "true", 
+    menu: "false", 
+    wmode: "opaque" 
+    //wmode: "window" 
+  };
+  var attributes = {
+    id: "builder", 
+    name: "builder",  
+    wmode: "opaque" 
+    //wmode: "window" 
+  };
+
+    swfobject.embedSWF("/flowlab.swf?v=7", "builder", "320", "320", "10.0.0", "expressInstall.swf", flashvars, params, attributes);
+  
+  function resizeFlash(newWidth,newHeight){
+    if(newWidth){
+      $("#builder").css("width",newWidth);
+    }
+    if(newHeight){
+      $("#builder").css("height",newHeight);
+    }
+    if (newHeight == "100%") {
+      $("#game_frame").toggleClass("full_frame", true);
+      $("#game_frame").toggleClass("wrapper_frame", false);
+      $(".wrapper_frame").width(newWidth);
+      $(".wrapper_frame").height(newHeight);
+      $("#game_frame").width(newWidth);
+      $("#game_frame").height(newHeight);
+    } else {
+      $("#game_frame").toggleClass("full_frame", false);
+      $("#game_frame").toggleClass("wrapper_frame", true);
+      $(".wrapper_frame").width(newWidth+10);
+      $(".wrapper_frame").height(newHeight+80);
+    }
+  }
+  $(document).ready(function() {
+    $("#builder").focus();
+  }); 
+  function updateTitle(newTitle) {
+    document.title = "Flowlab - "+newTitle;
+    $("#game_title").text(newTitle);
+  }
+  function openEditor() {
+    $("#builder").get(0).openEditor();
+    $("#builder").focus();
+  }
+  $(function(){
+    $('#screenshot_btn').click(function(event) {
+      event.preventDefault();
+      event.stopPropagation();
+      $("#builder").get(0).takeScreenshot();
+      $("#builder").focus();
+      $('#screenshot-confirm').fadeIn('slow').delay(500).fadeOut('slow');
+    });
+  });
+  $(function(){
+    $('#fb-share').click(function(event){
+      event.preventDefault();
+      event.stopPropagation();
+      var sharer = "https://www.facebook.com/sharer/sharer.php?u=";
+      window.open(sharer + location.href, 'sharer', 'width=626,height=436');
+    })
+  });
+  $(function(){
+    $('#sharebtn').click(function(event){
+      event.preventDefault();
+      event.stopPropagation();
+      $('#share-game').fadeToggle();
+    })
+  });
+
+  var favorited = false;
+  $(function(){
+    $('#likebtn').click(function(event){
+      event.preventDefault();
+      event.stopPropagation();
+        
+      if (favorited) {
+        return;
+      }
+      favorited = true;
+
+      var oldCount = parseInt($('#fav_count').text(),10);
+
+      $.ajax({
+        url: "/game/like/462693"
+      }).done(function() {
+        $('#likeicon').attr('src', '/images/heart_icon_grey.png');
+        $('#fav_count').text(oldCount+1);
+      });
+    })
+  });
+  </script>
+
+   </body></html>
